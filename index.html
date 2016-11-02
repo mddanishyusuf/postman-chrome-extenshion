@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="postman-clone">
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Postman Clone</title>
+		<link rel="stylesheet" href="css/prism.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/postmain-clone.css">
+	</head>
+	<body>
+		<div class="container" ng-controller="homeController">
+			<form class="form-inline text-center">
+			<div class="input-group">
+				<div class="input-group-addon">
+			 	<select ng-init="http_option = 'GET'" ng-model="http_option" ng-options="option for option in ['GET','POST','PUT','DELETE']"></select>
+				</div>
+				<input type="text" class="form-control" ng-model="url" id="url" placeholder="Enter url with params" style="width:300px">
+				<div class="input-group-addon">
+					<a class="send_button" ng-click="sended_url()">Send</a>
+				</div>
+			</div>
+			</form>
+			<div>
+				{{status}}
+				<pre ng-prism class="language-json" source="{{result | json}}"></pre>
+			</div>
+		</div>
+		<script src="js/angular.min.js"></script>
+		<script src="js/postman-clone.js"></script>
+		<script src="js/prism.js"></script>
+		<script src="js/ng-prism.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
