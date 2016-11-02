@@ -10,5 +10,7 @@
 	"background": {
 	"scripts": ["js/angular.min.js"]
 	},
+	"icons": { "16": "img/icon.png",
+           "48": "img/icon.png" },
 	"content_security_policy": "script-src 'self'; object-src 'self'"
 }

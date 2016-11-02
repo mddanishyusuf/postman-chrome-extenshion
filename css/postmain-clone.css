@@ -19,9 +19,6 @@ pre{
     border-width: 2px 0px 2px 2px;
     border-color: #777;
 }
-.input-group{
-	border: 4px solid #eee;
-}
 .input-group input{
     border: none;
     border: 2px solid #777;

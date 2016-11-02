@@ -22,8 +22,9 @@
 				</div>
 			</div>
 			</form>
-			<div>
-				{{status}}
+			<center><img class="text-center" src="img/hourglass.gif" ng-show="loading_icon"/></center>
+			<div ng-show="show_result">
+			Result : <span ng-bind="get_error_message(status)"></span>
 				<pre ng-prism class="language-json" source="{{result | json}}"></pre>
 			</div>
 		</div>
