@@ -16,7 +16,7 @@
 				<div class="input-group-addon">
 			 	<select ng-init="http_option = 'GET'" ng-model="http_option" ng-options="option for option in ['GET','POST','PUT','DELETE']"></select>
 				</div>
-				<input type="text" class="form-control" ng-model="url" id="url" placeholder="Enter url with params" style="width:300px">
+				<input type="text" class="form-control" ng-model="url" id="url" placeholder="Enter url with params" style="min-width:300px">
 				<div class="input-group-addon">
 					<a class="send_button" ng-click="sended_url()">Send</a>
 				</div>
@@ -24,6 +24,7 @@
 			</form>
 			<center><img class="text-center" src="img/hourglass.gif" ng-show="loading_icon"/></center>
 			<div ng-show="show_result">
+			Method : {{method_name}}<br/>
 			Result : <span ng-bind="get_error_message(status)"></span>
 				<pre ng-prism class="language-json" source="{{result | json}}"></pre>
 			</div>

@@ -6,6 +6,7 @@ app.controller('homeController',['$scope','$http',function(sc,http){
   sc.show_result = false
   sc.loading_icon = false
   sc.sended_url = function(){
+  sc.method_name = sc.http_option
   sc.show_result = false
   sc.loading_icon = true
     http({method: sc.http_option, url: sc.url}).success(function(data,status){
