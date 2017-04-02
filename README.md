@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README #
 
 Job Task for causecode.com ( Clone like a POSTMAN )
@@ -24,3 +25,7 @@ Job Task for causecode.com ( Clone like a POSTMAN )
 -----------------------
 
 * Repo by "Mohd Danish"
+=======
+# postman-chrome-extenshion
+basic application for HTTP services and return JSON data
+>>>>>>> 998625e9952866669f4c03f8e7759cd4a224f588

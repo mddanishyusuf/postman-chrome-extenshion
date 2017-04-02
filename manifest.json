@@ -1,16 +1,13 @@
 {
-	"manifest_version": 2,
-	"name": "Clone POSTMAN",
-	"description": "Job Task for causecode.com ( Clone like a POSTMAN )",
-	"version": "0.1",
-	"author": "Mohd Danish",
-	"browser_action": {
-		"default_popup": "index.html"
-	},
-	"background": {
-	"scripts": ["js/angular.min.js"]
-	},
-	"icons": { "16": "img/icon.png",
-           "48": "img/icon.png" },
-	"content_security_policy": "script-src 'self'; object-src 'self'"
+    "name": "bookmark-search-export",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "This extention will dump all bookmarks",
+    "background": {
+        "scripts": ["js/export.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "bookmarks"
+    ]
 }
